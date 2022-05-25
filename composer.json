@@ -1,0 +1,27 @@
+{
+    "name": "referenzverwaltung/model.photos",
+    "description": "model.photos",
+    "type": "library",
+    "version": "1.0.0",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Referenzverwaltung\\ModelPhoto\\PhotoServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Referenzverwaltung\\ModelPhoto\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Patrick Bahati Duss",
+            "email": "patrickbahatiduss.pbd@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4.0"
+    }
+}
