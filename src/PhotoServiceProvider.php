@@ -5,6 +5,8 @@ namespace Referenzverwaltung\ModelPhoto;
 use Illuminate\Support\ServiceProvider;
 use Referenzverwaltung\ModelPhoto\Interfaces\PhotoRepositoryInterface;
 use Referenzverwaltung\ModelPhoto\Repositories\PhotoRepository;
+use Referenzverwaltung\ModelPhoto\Interfaces\UserRepositoryInterface;
+use Referenzverwaltung\ModelPhoto\Repositories\UserRepository;
 
 class PhotoServiceProvider extends ServiceProvider
 {
@@ -26,6 +28,7 @@ class PhotoServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->app->bind(PhotoRepositoryInterface::class, PhotoRepository::class);
+        $this->app->bind(UserRepositoryInterface::class, UserRepository::class);
     
     }
 }
